@@ -25,8 +25,8 @@ Precision, Recall, F-score and MCC on the datasets in the **Data** folder\
 - `initialisation_delays.csv`: results of our initialisation delay calculations for
 six detectors from [NAB](https://github.com/numenta/NAB), AnDePeD and AnDePeD Pro,
 based on their respective publications or implementations\
-(lower values are better, value range is $[0, \infty]$ in theory and $[0, 4621]$ in practice)
+(lower values are better, value range is $[0, \infty]$ in theory and $[0, 4\;621]$ in practice)
 
 - `detection_delay_results_Mode-I.csv`: average results of detection delays by six detectors
 from [NAB](https://github.com/numenta/NAB), AnDePeD and AnDePeD Pro (latter two in Mode-I)\
-(lower values are better, value range is $[0, \infty]$ in theory and $[0, 4621]$ in practice)
+(lower values are better, value range is $[0, \infty]$ in theory and $[0, 4\;621]$ in practice)
