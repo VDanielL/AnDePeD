@@ -6,10 +6,29 @@ server farm telemetry data. We introduce our new algorithms; AnDePeD and AnDePeD
 ## Code
 
 This folder contains the following real-time, unidimensional anomaly detection
-algorithm implementations:
-- a
-- a
-- b
+algorithm implementations.
+
+#### Our novel methods
+
+- AnDePeD;
+- AnDePeD Pro.
+
+#### Sourced from [NAB](https://github.com/numenta/NAB) for comparison
+ 
+- Bayesian Changepoint;
+- Windowed Gaussian;
+- Relative Entropy;
+- Earthgecko Skyline;
+- CAD OSE;
+- KNN CAD.
+
+We also include the data files present in the **Data** folder here for ease of use.
+
+#### Running algorithms
+
+Parameters of the experiment can be set in `main_config.py`, while
+[Optuna](https://optuna.org/) optimisation parameters can be set in
+`optimiser_config.py`. Run `main.py` once parameters are set.
 
 ## Data
 
@@ -32,9 +51,8 @@ normal sections had been present in the original data, we also randomised the or
 segments.
 
 This folder contains the results of this randomisation via four files for each of the seven datasets:
-- `<dataset name>_origdata.csv`: original [NAB](https://github.com/numenta/NAB) dataset;
-- `<dataset name>_origlabels.csv`: anomaly labels of original
-[NAB](https://github.com/numenta/NAB) dataset;
+- `<dataset name>_origdata.csv`: original NAB dataset;
+- `<dataset name>_origlabels.csv`: anomaly labels of original NAB dataset;
 - `<dataset name>_adddata-<date id>.csv`: randomised, three times longer dataset we generated;
 - `<dataset name>_addlabels-<date id>.csv`: anomaly labels for the randomised,
 three times longer dataset we generated.
@@ -48,16 +66,16 @@ online streaming data.
 This folder contains the numerical results that are shown in the paper as figures. 
 
 - `anomaly_detection_performance_results.csv`: average results of the six detectors from 
-[NAB](https://github.com/numenta/NAB), AnDePeD and AnDePeD Pro (latter two in both online
+NAB, AnDePeD and AnDePeD Pro (latter two in both online
 operational modes: Mode-I and Mode-II), using the metrics of
 Precision, Recall, F-score and MCC on the datasets in the **Data** folder  
-(higher values are better, value range is $[0,1]$ for all four metrics).
+(higher values are better, value range is $[0,1]$ for all four metrics);
 
 - `initialisation_delays.csv`: results of our initialisation delay calculations for the
-six detectors from [NAB](https://github.com/numenta/NAB), AnDePeD and AnDePeD Pro,
+six detectors from NAB, AnDePeD and AnDePeD Pro,
 based on their respective publications or implementations  
-(lower values are better, value range is $[0, \infty)$ in theory and $[0, 4621]$ in practice).
+(lower values are better, value range is $[0, \infty)$ in theory and $[0, 4621]$ in practice);
 
 - `detection_delay_results_Mode-I.csv`: average results of detection delays by the six detectors
-from [NAB](https://github.com/numenta/NAB), AnDePeD and AnDePeD Pro (latter two in Mode-I)  
+from NAB, AnDePeD and AnDePeD Pro (latter two in Mode-I)  
 (lower values are better, value range is $[0, \infty]$ in theory and $[0, 4621]$ in practice).
