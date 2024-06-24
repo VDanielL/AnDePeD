@@ -80,8 +80,8 @@ class DataHandler:
                 return '', False
             else:
                 path = self.get_offline_dataset(self.offline_dataset_index)
-                self.offline_dataset_index += 1
                 more_left = self.offline_dataset_index < len(self.dataset_names) - 1
+                self.offline_dataset_index += 1
                 return path, more_left
 
         elif mode == 'online':
@@ -91,8 +91,8 @@ class DataHandler:
                 return '', False
             else:
                 path = self.get_online_dataset(self.online_dataset_index)
-                self.online_dataset_index += 1
                 more_left = self.online_dataset_index < len(self.dataset_names) - 1
+                self.online_dataset_index += 1
                 return path, more_left
 
         else:
