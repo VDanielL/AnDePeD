@@ -24,6 +24,16 @@ algorithm implementations.
 
 We also include the data files present in the **Data** folder here for ease of use.
 
+#### Installation
+
+We used `Python 3.9.2` for running our experiments with package versions included
+in `requirements.txt`. Packages can be installed system-wide or in a virtual
+environment using the `pip install -r requirements.txt`command.
+For more specific details on setting up individual algorithms from NAB,
+refer to the respective README files therein:
+[.../nab/detectors](https://github.com/numenta/NAB/tree/master/nab/detectors).
+
+
 #### Running algorithms
 
 Parameters of the experiment can be set in `main_config.py`, while
