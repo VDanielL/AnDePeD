@@ -86,6 +86,6 @@ six detectors from NAB, AnDePeD and AnDePeD Pro,
 based on their respective publications or implementations  
 (lower values are better, value range is $[0, \infty)$ in theory and $[0, 4621]$ in practice);
 
-- `detection_delay_results_Mode-I.csv`: average results of detection delays by the six detectors
-from NAB, AnDePeD and AnDePeD Pro (latter two in Mode-I)  
-(lower values are better, value range is $[0, \infty]$ in theory and $[0, 4621]$ in practice).
+- `detection_delay_results_Mode-I.csv`: average, minimum, maximum and standard deviation results of detection delays by
+the six detectors from NAB, AnDePeD and AnDePeD Pro (latter two in Mode-I)  
+(lower values are better, value range is $[0, \infty)$ in theory and $[0, 4621]$ in practice).
