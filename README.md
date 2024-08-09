@@ -13,13 +13,17 @@ algorithm implementations.
 - AnDePeD;
 - AnDePeD Pro.
 
+#### Our pre-existing methods
+
+- Alter-Re²;
+- AREP.
+
 #### Sourced from [NAB](https://github.com/numenta/NAB) for comparison
  
 - Bayesian Changepoint;
 - Windowed Gaussian;
 - Relative Entropy;
 - Earthgecko Skyline;
-- CAD OSE;
 - KNN CAD.
 
 We also include the data files present in the **Data** folder here for ease of use.
@@ -75,17 +79,17 @@ online streaming data.
 
 This folder contains the numerical results that are shown in the paper as figures. 
 
-- `anomaly_detection_performance_results.csv`: average results of the six detectors from 
-NAB, AnDePeD and AnDePeD Pro (latter two in both online
+- `anomaly_detection_performance_results.csv`: average results of the five detectors from 
+NAB, Alter-Re², AREP, AnDePeD and AnDePeD Pro (latter two in both online
 operational modes: Mode-I and Mode-II), using the metrics of
 Precision, Recall, F-score and MCC on the datasets in the **Data** folder  
 (higher values are better, value range is $[0,1]$ for all four metrics);
 
 - `initialisation_delays.csv`: results of our initialisation delay calculations for the
-six detectors from NAB, AnDePeD and AnDePeD Pro,
+five detectors from NAB, Alter-Re², AREP, AnDePeD and AnDePeD Pro,
 based on their respective publications or implementations  
 (lower values are better, value range is $[0, \infty)$ in theory and $[0, 4621]$ in practice);
 
 - `detection_delay_results_Mode-I.csv`: average, minimum, maximum and standard deviation results of detection delays by
-the six detectors from NAB, AnDePeD and AnDePeD Pro (latter two in Mode-I)  
+the five detectors from NAB, Alter-Re², AREP, AnDePeD and AnDePeD Pro (latter two in Mode-I)  
 (lower values are better, value range is $[0, \infty)$ in theory and $[0, 4621]$ in practice).
