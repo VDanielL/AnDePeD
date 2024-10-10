@@ -96,11 +96,15 @@ class OnlineProcedure:
         return remainder_values
 
     def _get_buffer_size(self):
+        to_ret = -1
         if self.mode == 'I':
-            return self.l_vmd
+            to_ret = self.l_vmd
         if self.mode == 'II':
-            return self.l
-        return -1
+            to_ret = self.l
+        if self.mode in ['I', 'II']:
+            return to_ret + to_ret % 2
+        else:
+            return -1
 
     def initialise_online_detector(self):
         if self.algorithm == 'bayesChangePt':
